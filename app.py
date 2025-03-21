@@ -34,4 +34,5 @@ def convert(val, from_u, to_u):
 
 # Output
 result = convert(value, from_unit, to_unit)
-st.markdown("""f### Result **{value} {from_unit} {to_unit}""")
+st.markdown(f"### Result **{value} {from_unit} = {result} {to_unit}**")
+
