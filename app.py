@@ -18,10 +18,10 @@ units = {
 }
 
 # Sidebar for selection
-category = st.sidebar.selectbox("Select Category", list(units.keys()))
-from_unit = st.sidebar.selectbox("From Unit", units[category])
-to_unit = st.sidebar.selectbox("To Unit", units[category])
-value = st.sidebar.number_input("Enter Value", value=1.0)
+category = st.selectbox("Select Category", list(units.keys()))
+from_unit = st.selectbox("From Unit", units[category])
+to_unit = st.selectbox("To Unit", units[category])
+value = st.number_input("Enter Value", value=1.0)
 
 # Conversion function
 def convert(val, from_u, to_u):
